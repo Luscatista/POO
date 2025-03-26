@@ -14,6 +14,14 @@ namespace POO
         public string Modelo { get; set; }
         public int AnoFabricacao { get; set; }
 
+        public Carro(string marca, string cor, string modelo, int anoFabricacao)
+        {
+            Marca = marca;
+            Cor = cor;
+            Modelo = modelo;
+            AnoFabricacao = anoFabricacao;
+        }
+
         public string Andar()
         {
             return "O carro esta andando!!";
@@ -24,7 +32,7 @@ namespace POO
         }
         public string MostrarInformacoes()
         {
-            return $" O carro é um {Modelo} de cor {Cor} da marca {Marca} e seu ano de fabricação é {AnoFabricacao}.";
+            return $" O carro é um {Modelo}, sua cor é {Cor}, marca {Marca} e seu ano de fabricação é {AnoFabricacao}.";
         }
     }
 }
