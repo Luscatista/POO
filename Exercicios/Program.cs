@@ -74,50 +74,78 @@ using System.Globalization;
 //Console.WriteLine(produto.MostrarInformacoes());
 
 
-Console.WriteLine("Fundamentais");
-Console.WriteLine();
-Console.WriteLine("1. Classe ContaBancaria");
-Console.WriteLine("Crie uma classe chamada `ContaBancaria` que tenha:\r\n");
-Console.WriteLine("-Um atributo privado `_saldo` (com valor padrão de 0).\r\n");
-Console.WriteLine("- Um método público `Depositar(double valor)`, que adiciona um valor ao saldo.\r\n");
-Console.WriteLine("- Um método público `Sacar(double valor)`, que subtrai um valor do saldo (se houver saldo suficiente).\r\n");
-Console.WriteLine("- Um método público `VerSaldo()`, que retorna o saldo atual.\r\n");
-Console.WriteLine();
-Console.WriteLine("Crie um objeto dessa classe e faça algumas operações de depósito e saque.");
-Console.WriteLine();
+//Console.WriteLine("Fundamentais");
+//Console.WriteLine();
+//Console.WriteLine("1. Classe ContaBancaria");
+//Console.WriteLine("Crie uma classe chamada `ContaBancaria` que tenha:\r\n");
+//Console.WriteLine("-Um atributo privado `_saldo` (com valor padrão de 0).\r\n");
+//Console.WriteLine("- Um método público `Depositar(double valor)`, que adiciona um valor ao saldo.\r\n");
+//Console.WriteLine("- Um método público `Sacar(double valor)`, que subtrai um valor do saldo (se houver saldo suficiente).\r\n");
+//Console.WriteLine("- Um método público `VerSaldo()`, que retorna o saldo atual.\r\n");
+//Console.WriteLine();
+//Console.WriteLine("Crie um objeto dessa classe e faça algumas operações de depósito e saque.");
+//Console.WriteLine();
 
-ContaBancaria conta = new ContaBancaria();
-Console.WriteLine("Voce fez uma entrega, qual foi o valor recebido?");
-double valor = double.Parse(Console.ReadLine());
-conta.Depositar(valor);
+//ContaBancaria conta = new ContaBancaria();
+//Console.WriteLine("Voce fez uma entrega, qual foi o valor recebido?");
+//double valor = double.Parse(Console.ReadLine());
+//conta.Depositar(valor);
+//Console.WriteLine();
+
+//Console.WriteLine("Voce fez uma compra, qual o valor a ser debitado de sua conta?");
+//valor = double.Parse(Console.ReadLine());
+//conta.Sacar(valor);
+//Console.WriteLine();
+
+//Console.WriteLine("Voce recebeu um e-mail com seu saldo bancario..");
+//Console.WriteLine(conta.VerSaldo());
+//Console.WriteLine();
+
+//Console.WriteLine("2. Classe Funcionario");
+//Console.WriteLine("Crie uma classe `Funcionario` com:\r\n");
+//Console.WriteLine("-Um atributo privado `_salario`.\r\n");
+//Console.WriteLine("- Métodos `SetSalario(valor)` e `GetSalario()`\r\n");
+//Console.WriteLine("- SetSalario** → Modifica o salario com o valor fornecido pelo usuario\r\n");
+//Console.WriteLine("- GetSalario** → Retorna o Salario\r\n");
+//Console.WriteLine("Crie um objeto, defina um salário e exiba o valor usando `GetSalario()`.\r\n");
+//Console.WriteLine();
+
+//Funcionario funcionario = new Funcionario();
+
+//Console.WriteLine("Qual o novo valor do salario?");
+//double salario = double.Parse(Console.ReadLine());
+//funcionario.SetSalario(salario);
+//Console.WriteLine();
+
+//Console.WriteLine($"O funcionario tem um salario no valor de R${funcionario.GetSalario()}");
+//Console.WriteLine();
+
+//Console.WriteLine("3. Classe Retangulo");
+//Console.WriteLine("Crie uma classe `Retangulo` com:\r\n");
+//Console.WriteLine("-Dois atributos privados `_largura` e `_altura`.\r\n");
+//Console.WriteLine("- Métodos `SetLargura(valor)`, `SetAltura(valor)`, `GetLargura()` e `GetAltura()`.\r\n");
+//Console.WriteLine("- SetLargura** → Modifica a _largura com o valor fornecido pelo usuario\r\n");
+//Console.WriteLine("- SetAltura** → Modifica a _altura com o valor fornecido pelo usuario\r\n");
+//Console.WriteLine("- GetLargura** → Retorna a Largura\r\n");
+//Console.WriteLine("- GetAltura** → Retorna a Altura\r\n");
+//Console.WriteLine("- Um método público `CalcularArea()`, que retorna a área do retângulo.\r\n");
+//Console.WriteLine("Crie um objeto, defina largura e altura, e exiba a área calculada.\r\n");
+//Console.WriteLine();
+
+Retangulo retangulo = new Retangulo();
+
+Console.WriteLine("Digite a largura do retangulo:");
+double largura = double.Parse(Console.ReadLine());
+retangulo.SetLargura(largura);
 Console.WriteLine();
-
-Console.WriteLine("Voce fez uma compra, qual o valor a ser debitado de sua conta?");
-valor = double.Parse(Console.ReadLine());
-conta.Sacar(valor);
+Console.WriteLine("Digite a altura do retangulo:");
+double altura = double.Parse(Console.ReadLine());
+retangulo.SetAltura(altura);
 Console.WriteLine();
-
-Console.WriteLine("Voce recebeu um e-mail com seu saldo bancario..");
-Console.WriteLine(conta.VerSaldo());
+Console.WriteLine(retangulo.GetAltura());
+Console.WriteLine(retangulo.GetLargura());
+Console.WriteLine($"O valor da área do retangulo é: {retangulo.CalcularArea()}");
 Console.WriteLine();
-
-Console.WriteLine("2. Classe Funcionario");
-Console.WriteLine("Crie uma classe `Funcionario` com:\r\n");
-Console.WriteLine("-Um atributo privado `_salario`.\r\n");
-Console.WriteLine("- Métodos `SetSalario(valor)` e `GetSalario()`\r\n");
-Console.WriteLine("- SetSalario** → Modifica o salario com o valor fornecido pelo usuario\r\n");
-Console.WriteLine("- GetSalario** → Retorna o Salario\r\n");
-Console.WriteLine("Crie um objeto, defina um salário e exiba o valor usando `GetSalario()`.\r\n");
-Console.WriteLine();
-
-Funcionario funcionario = new Funcionario();
-
-Console.WriteLine("Qual o novo valor do salario?");
-double salario = double.Parse(Console.ReadLine());
-funcionario.SetSalario(salario);
-Console.WriteLine();
-
-Console.WriteLine($"O funcionario tem um salario no valor de R${funcionario.GetSalario()}");
 
 
 

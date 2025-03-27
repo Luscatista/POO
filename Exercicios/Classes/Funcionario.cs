@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios.Classes
+namespace Exercicios.Classes;
+
+class Funcionario
 {
-    class Funcionario
+    private double _salario;
+
+    public void SetSalario(double valor)
     {
-        private double _salario;
+        _salario = valor;
+    }
 
-        public void SetSalario(double valor)
-        {
-            _salario = valor;
-        }
-
-        public double GetSalario()
-        {
-            return _salario;
-        }
+    public double GetSalario()
+    {
+        return _salario;
     }
 }
