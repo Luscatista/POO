@@ -1,7 +1,7 @@
 ﻿using POO.Classes;
 
 
-
+// exemplo de classe (criacao e instanciacao)
 List<Carro> carros = new List<Carro>();
 
 for(int i = 0; i < 2; i++)
@@ -25,3 +25,9 @@ foreach(var item in carros)
     Console.WriteLine();
 }
 
+// 4 Pilares de POO 
+//Encapsulamento - esconde comportamentos e atributos
+// o encapsulamento tambem ajuda o desenvolvedor a ditar as regras (exemplo: um metodo com uma condicao necessaria para alterar algum atributo) 
+//heranca
+//abstracao
+//polimorfismo
