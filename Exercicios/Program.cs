@@ -101,5 +101,27 @@ Console.WriteLine("Voce recebeu um e-mail com seu saldo bancario..");
 Console.WriteLine(conta.VerSaldo());
 Console.WriteLine();
 
+Console.WriteLine("2. Classe Funcionario");
+Console.WriteLine("Crie uma classe `Funcionario` com:\r\n");
+Console.WriteLine("-Um atributo privado `_salario`.\r\n");
+Console.WriteLine("- Métodos `SetSalario(valor)` e `GetSalario()`\r\n");
+Console.WriteLine("- SetSalario** → Modifica o salario com o valor fornecido pelo usuario\r\n");
+Console.WriteLine("- GetSalario** → Retorna o Salario\r\n");
+Console.WriteLine("Crie um objeto, defina um salário e exiba o valor usando `GetSalario()`.\r\n");
+Console.WriteLine();
+
+Funcionario funcionario = new Funcionario();
+
+Console.WriteLine("Qual o novo valor do salario?");
+double salario = double.Parse(Console.ReadLine());
+funcionario.SetSalario(salario);
+Console.WriteLine();
+
+Console.WriteLine($"O funcionario tem um salario no valor de R${funcionario.GetSalario()}");
+
+
+
+
+
 
 
