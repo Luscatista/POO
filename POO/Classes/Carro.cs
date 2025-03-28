@@ -9,18 +9,10 @@ namespace POO.Classes
 {
     class Carro
     {
-        public string Marca { get; set; }
-        public string Cor { get; set; }
-        public string Modelo { get; set; }
-        public int AnoFabricacao { get; set; }
-
-        public Carro(string marca, string cor, string modelo, int anoFabricacao)
-        {
-            Marca = marca;
-            Cor = cor;
-            Modelo = modelo;
-            AnoFabricacao = anoFabricacao;
-        }
+        public string Marca;
+        public string Cor;
+        public string Modelo;
+        public int AnoFabricacao;
 
         public string Andar()
         {

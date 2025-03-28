@@ -8,7 +8,7 @@ namespace Exercicios.Classes
 {
     class ContaBancaria
     {
-        private double _saldo { get; set; } = 0;
+        protected double _saldo = 0;
 
         public void Depositar(double valor)
         {

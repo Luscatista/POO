@@ -8,7 +8,7 @@ namespace Exercicios.Classes;
 
 class Funcionario
 {
-    private double _salario;
+    protected double _salario;
 
     public void SetSalario(double valor)
     {

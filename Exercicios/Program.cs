@@ -132,24 +132,58 @@ using System.Globalization;
 //Console.WriteLine("Crie um objeto, defina largura e altura, e exiba a área calculada.\r\n");
 //Console.WriteLine();
 
-Retangulo retangulo = new Retangulo();
+//Retangulo retangulo = new Retangulo();
 
-Console.WriteLine("Digite a largura do retangulo:");
-double largura = double.Parse(Console.ReadLine());
-retangulo.SetLargura(largura);
+//Console.WriteLine("Digite a largura do retangulo:");
+//double largura = double.Parse(Console.ReadLine());
+//retangulo.SetLargura(largura);
+//Console.WriteLine();
+//Console.WriteLine("Digite a altura do retangulo:");
+//double altura = double.Parse(Console.ReadLine());
+//retangulo.SetAltura(altura);
+//Console.WriteLine();
+//Console.WriteLine(retangulo.GetAltura());
+//Console.WriteLine(retangulo.GetLargura());
+//Console.WriteLine($"O valor da área do retangulo é: {retangulo.CalcularArea()}");
+//Console.WriteLine();
+
+//Console.WriteLine("4. Conta Corrente e Conta Poupança\r\n");
+//Console.WriteLine("Utilizando a classe `ContaBancaria` criada no exercício 1, crie duas subclasses:\r\n");
+//Console.WriteLine("- `ContaCorrente`: possui um método `CobrarTaxa()` que reduz o saldo em um valor fixo (ex: 10).\r\n");
+//Console.WriteLine("- `ContaPoupanca`: possui um método `RenderJuros()`, que aumenta o saldo em 5%.\r\n");
+//Console.WriteLine("Crie instâncias de ambas as classes, faça depósitos e utilize seus métodos específicos.\r\n");
+//Console.WriteLine();
+
+//ContaCorrente contaCorrente = new ContaCorrente();
+//ContaPoupanca contaPoupanca = new ContaPoupanca();
+
+//Console.WriteLine("Digite o valor do deposito na sua conta corrente:");
+//double valor = double.Parse(Console.ReadLine());
+//contaCorrente.Depositar(valor);
+//Console.WriteLine();
+//contaCorrente.CobrarTaxa();
+//Console.WriteLine($"Apos aplicar as taxas seu saldo passou a ser {contaCorrente.VerSaldo()}");
+//Console.WriteLine();
+
+//Console.WriteLine("Digite o valor do deposito na sua conta poupança:");
+//valor = double.Parse(Console.ReadLine());
+//contaPoupanca.Depositar(valor);
+//Console.WriteLine();
+//contaPoupanca.RenderJuros();
+//Console.WriteLine($"Apos render juros seu saldo passou a ser {contaPoupanca.VerSaldo()}");
+//Console.WriteLine();
+
+Console.WriteLine("5. Funcionário e Gerente");
+Console.WriteLine("Baseando - se na classe `Funcionario` do exercício 2, crie uma classe `Gerente`, que:\r\n");
+Console.WriteLine("-Herda `Funcionario`.\r\n");
+Console.WriteLine("- Possui um método `Bonificar()`, que aumenta o salário em 10%.\r\n");
+Console.WriteLine("Crie um objeto da classe `Gerente`, defina um salário, aplique a bonificação e exiba o salário atualizado.");
 Console.WriteLine();
-Console.WriteLine("Digite a altura do retangulo:");
-double altura = double.Parse(Console.ReadLine());
-retangulo.SetAltura(altura);
+
+Gerente gerente = new Gerente();
+Console.WriteLine("Qual o salario ?");
+double salario = double.Parse(Console.ReadLine());
+gerente.SetSalario(salario);
 Console.WriteLine();
-Console.WriteLine(retangulo.GetAltura());
-Console.WriteLine(retangulo.GetLargura());
-Console.WriteLine($"O valor da área do retangulo é: {retangulo.CalcularArea()}");
-Console.WriteLine();
-
-
-
-
-
-
-
+gerente.Bonificar();
+Console.WriteLine($"O valor do salario apos a bonificaçao é: {gerente.GetSalario()}");
