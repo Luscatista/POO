@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POO.Classes
+namespace POO.Classes.Carros
 {
     class Carro
     {
@@ -22,7 +22,7 @@ namespace POO.Classes
         {
             return "O carro esta parado!!";
         }
-        public string MostrarInformacoes()
+        public virtual string MostrarInformacoes()
         {
             return $" O carro é um {Modelo}, sua cor é {Cor}, marca {Marca} e seu ano de fabricação é {AnoFabricacao}.";
         }

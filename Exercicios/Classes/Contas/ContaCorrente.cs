@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios.Classes
+namespace Exercicios.Classes.Contas;
+
+class ContaCorrente : ContaBancaria
 {
-    class PessoaJuridica : Pessoa
+    public void CobrarTaxa()
     {
-        public string CNPJ;
+        _saldo -= 10;
     }
+
 }

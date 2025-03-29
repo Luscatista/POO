@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Exercicios.Classes.Funcionarios;
 
 namespace Exercicios.Classes;
 
-class ContaCorrente : ContaBancaria
+class Gerente : Funcionario
 {
-    public void CobrarTaxa()
+    public void Bonificar()
     {
-        _saldo -= 10;
+        _salario *= 1.1;
     }
-
 }

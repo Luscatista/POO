@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Exercicios.Classes.Pessoas;
 
-namespace Exercicios.Classes;
-
-class Gerente : Funcionario
+namespace Exercicios.Classes
 {
-    public void Bonificar()
+    class PessoaFisica : Pessoa
     {
-        _salario *= 1.1;
+        public string CPF;
     }
 }

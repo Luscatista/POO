@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios.Classes;
+namespace Exercicios.Classes.Funcionarios;
 
 class Funcionario
 {

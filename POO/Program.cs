@@ -1,4 +1,4 @@
-﻿using POO.Classes;
+﻿using POO.Classes.Carros;
 
 
 // exemplo de classe (criacao e instanciacao)
@@ -36,5 +36,11 @@ CarroEletrico carroE = new CarroEletrico();
 CarroCombustao carroCombustao = new CarroCombustao();
 
 carroE.AnoFabricacao = 2020;
+carroE.Modelo = "Prius";
+carroE.Cor = "Prata";
+carroE.Marca = "Toyota";
 carroE.TempoDeCarga = 30;
+carroE.BateriaMotor = "Motor Eletrico 1100";
+Console.WriteLine(carroE.MostrarInformacoes());
 
+//Polimorfismo(depnde de herança) e Abstração

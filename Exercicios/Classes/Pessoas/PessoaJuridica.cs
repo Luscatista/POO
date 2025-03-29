@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Exercicios.Classes.Pessoas;
 
 namespace Exercicios.Classes
 {
-    class PessoaFisica : Pessoa
+    class PessoaJuridica : Pessoa
     {
-        public string CPF;
+        public string CNPJ;
     }
 }

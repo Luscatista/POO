@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios.Classes
+namespace POO.Classes.Carros;
+
+class CarroCombustao : Carro
 {
-    class Pessoa
-    {
-        public string Nome;
-    }
+    public string combustivel;
+
 }

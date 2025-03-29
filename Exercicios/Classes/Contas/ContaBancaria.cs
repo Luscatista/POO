@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios.Classes
+namespace Exercicios.Classes.Contas
 {
     class ContaBancaria
     {
@@ -17,9 +17,9 @@ namespace Exercicios.Classes
 
         public void Sacar(double valor)
         {
-            if(valor <= _saldo)
+            if (valor <= _saldo)
             {
-            _saldo -= valor;
+                _saldo -= valor;
             }
             else
             {
